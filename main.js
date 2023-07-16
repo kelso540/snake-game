@@ -17,8 +17,8 @@ document.querySelector('#app').innerHTML = `
       <button class="start-button btn">START</button>
       <button class="start-button-refresh btn">START</button>
     </div>
-    <img src="assets/snake-background.png" alt="snake" id="snake-background" />
-    <img src="assets/apple.png" alt="apple" id="apple-background" />
+    <img src="/assets/snake-background.png" alt="snake" id="snake-background" />
+    <img src="/assets/apple.png" alt="apple" id="apple-background" />
 </div>`
 
 // **** CANVAS SETTINGS **** //
@@ -68,9 +68,9 @@ const g = {
 
 // **** IMAGES TO LOAD **** //
 let apple = new Image();
-apple.src = "assets/apple.png";
+apple.src = "/assets/apple.png";
 let snakeHead = new Image();
-snakeHead.src = "assets/snake-head.png";
+snakeHead.src = "/assets/snake-head.png";
 
 // **** MAIN GAME LOOP **** //
 const drawGame = ()=>{
