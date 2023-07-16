@@ -1,0 +1,108 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.main-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: calc(100vh - 40px);
+}
+#canvasStart{
+  background-color: rgb(80, 97, 42);
+  border: solid;
+}
+#canvas{
+  background-color: rgb(80, 97, 42);
+  border: solid;
+}
+.button-div{
+  display: none;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+.left-and-right-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.start-button-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-button-refresh{
+  display: none;
+}
+#snake-background{
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  height: 50%;
+}
+#apple-background{
+  position: absolute; 
+  bottom: 10px;
+  left: 40px;
+  height: 20%;
+}
+.btn{
+  border: none;
+  background-color: darkred;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  #snake-background{
+    height: 40%;
+  }
+  #apple-background{
+    bottom: 10px;
+    left: 40px;
+    height: 15%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #snake-background{
+    height: 30%;
+  }
+  #apple-background{
+    bottom: 10px;
+    left: 40px;
+    height: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #snake-background{
+    height: 20%;
+  }
+  #apple-background{
+    height: 7%;
+  }
+}
+@media screen and (max-width: 375px) {
+  #apple-background{
+    bottom: 10px;
+    left: 40px;
+    height: 7%;
+  }
+}
